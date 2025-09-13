@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 2px solid #ccc;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    form button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #555;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Car Showcase</h1>
+    <p>Explore your favorite car makes all in one place</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#videos">Videos</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>About Our Collection</h2>
+    <p>
+      We feature a curated collection of some of the most iconic car makes in the world.
+      From the speed of Ferrari to the innovation of Tesla, and the class of Mercedes-Benz—
+      there's something here for every car enthusiast.
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Car Gallery</h2>
+    <div class="gallery">
+      <img src="images/thumb/thumbnail_1.jpeg" alt="Ferrari Sports Car">
+      <img src="images/thumb/thumbnail_2.jpeg" alt="Tesla Model S">
+      <img src="images/thumb/thumbnail_3.jpg" alt="BMW M4 Coupe">
+      <img src="images/thumb/thumbnail_4.jpg" alt="Mercedes-Benz Luxury Car">
+      <img src="images/thumb/thumbnail_5.jpg" alt="Ford Mustang Muscle Car">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Video Section -->
+  <section id="videos">
+    <h2>Car Videos</h2>
+    <p>Watch some of the most exciting car reviews and launches.</p>
+
+    <iframe src="https://www.youtube.com/embed/tYDJzI3pzyM" title="Ferrari SF90 Review" allowfullscreen></iframe>
+
+    <iframe src="https://www.youtube.com/embed/ycx7xtg1acY" title="Tesla Plaid Drag Race" allowfullscreen></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Car Showcase. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
