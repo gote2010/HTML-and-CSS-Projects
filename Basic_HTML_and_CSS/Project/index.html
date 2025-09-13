@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Space Station</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .image-container img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .overlay h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .overlay p {
+      margin: 5px 0 0;
+      font-size: 0.9em;
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #f1f1f1;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Space Station</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reservations">Reservations</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to The Space Station</h2>
+    <p>
+      Experience the future of travel as you journey beyond the stars. The Space
+      Station offers a unique opportunity for space tourism, where you can explore
+      the beauty of outer space like never before.
+      <em>Don't miss out on this once-in-a-lifetime experience!</em>
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <!-- Image with overlay -->
+      <div class="image-container">
+        <img src="images/Thumb/thumbnail_1.jpg" alt="Earth view from orbit through a space station window" />
+        <div class="overlay">
+          <h3>Click to enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="images/Thumb/thumbnail_2.jpg" alt="Astronaut floating in outer space" />
+        <div class="overlay">
+          <h3>Click to enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="images/Thumb/thumbnail_3.jpg" alt="View of a sunrise over Earth from space" />
+        <div class="overlay">
+          <h3>Click to enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="images/Thumb/thumbnail_4.jpg" alt="Space station orbiting above the Earth" />
+        <div class="overlay">
+          <h3>Click to enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="images/Thumb/thumbnail_5.jpg" alt="Rocket launch with flames and smoke at liftoff" />
+        <div class="overlay">
+          <h3>Click to enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="images/Thumb/thumbnail_6.jpg" alt="Interior of futuristic space capsule with viewing ports" />
+        <div class="overlay">
+          <h3>Click to enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="images/Thumb/thumbnail_7.jpg" alt="Space tourist enjoying zero gravity inside spacecraft" />
+        <div class="overlay">
+          <h3>Click to enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="images/Thumb/thumbnail_8.jpg" alt="Panoramic view of the Milky Way galaxy from space" />
+        <div class="overlay">
+          <h3>Click to enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="images/Thumb/thumbnail_9.jpg" alt="Space Rocket taking off" />
+        <div class="overlay">
+          <h3>Click to enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservations">
+    <h2>Reservations</h2>
+    <p>
+      Book your trip to space today! Fill out the form below to reserve your place
+      aboard The Space Station:
+    </p>
+    <form action="#" method="post">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="tripDate">Preferred Trip Date:</label><br />
+      <input type="date" id="tripDate" name="tripDate" required /><br /><br />
+
+      <label for="message">Additional Requests:</label><br />
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br /><br />
+
+      <button type="submit">Reserve My Spot</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Learn More</h2>
+    <p>
+      If you're curious about the science behind space travel, check out our detailed
+      <a href="https://www.nasa.gov" target="_blank"><em>NASA website</em></a>
+      for more information!
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Space Station. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
